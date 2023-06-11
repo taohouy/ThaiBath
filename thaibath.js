@@ -44,7 +44,11 @@ function ArabicNumberToText(Number)
 				{
 					if ((i == (NumberLen - 1)) && (tmp == 1))
 					{
-						BahtText += "เอ็ด";
+						if(NumberLen==1){
+							BahtText += "หนึ่ง";
+						}else{
+							BahtText += "เอ็ด";
+						}
 					} else
 					if ((i == (NumberLen - 2)) && (tmp == 2))
 					{
